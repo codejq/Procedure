@@ -1,198 +1,459 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl" style="direction: rtl;">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-LPvXVVAlyPoBSGkX8UddpctDks+1P4HG8MhT7/YwqHtJ40bstjzCqjj+VVVDhsCo" crossorigin="anonymous">
-<style>
-.form-control{
-direction: rtl;
-font-size:20px;
-}
-.data-out{
-	color: #146fb0;
-	font-size: 20px;
-	font-weight: 900;
-	padding: 20px;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-LPvXVVAlyPoBSGkX8UddpctDks+1P4HG8MhT7/YwqHtJ40bstjzCqjj+VVVDhsCo" crossorigin="anonymous">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+  <style>
+    .form-control {
+      direction: rtl;
+      font-size: 20px;
+      line-height: 0.5;
+    }
+  </style>
 
 </head>
+
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Logo</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-		  
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluied">
+
+    <div class="row mt-5">
+
+      <div class="col-md-3">
+        <ul>
+          <li><a href="Tranning-needs.html"> الاحتياج التدريبي (الادارةالمختصة)</a></li>
+          <li><a href="MyRequests.html">طلباتي المرفوعة (الادارة المختصة) </a></li>
+          <li><a href="AdminTrainingRequests.html">ادارة طلبات البرامج (الادمن ومنسق التدريب المركز الرئيسي)</a></li>
+          <li><a href="addNominee.html">اضافة مرشحين</a> </li>
+          <li><a href="add-advert.html">اضافة اعلان عن دورة</a> </li>
+          <li><a href="My-adv.html">اعلاناتي المرسلة</a> </li>
+          <li><a href="Approve-Adv.html"> اعتماد ونشر الاعلانات</a> </li>
+          <li><a href="adv-details.html"> تفاصيل الاعلان والاعتماد</a> </li>
+          <li><a href="userlist.html"> ادارة التسجيل</a> </li>
+          <li><a href="adv.html"> الاعلان </a> </li>
+          <li><a href="register.html"> التسجيل في دورة </a> </li>
+          <li><a href="co-oprative-training.html"> التدريب التعاوني </a> </li>
+        </ul>
+
+      </div>
+
+      <div class="col-md-8">
+        <div class="col-md-12">
+          <h3>استمارة ترشيح متدرب</h3>
+          <small id="emailHelp" class="form-text text-muted">
+            طلب تدريب يقدمة الموظف ويعرض على مدير الشئون الأكادمية للموافقة ثم يرسل الطلب للحصول على موفقة مدير عام اللإدارة
+          </small>
+          <p>&nbsp;</p>
+
+        </div>
+        <!-- Start content -->
+        <!-- بيانات المرشح -->
+        <div>
+          <h4>بيانات المرشح</h4>
+          <div class="d-flex justify-content-between">
+            <div class="col me-2">
+              <label>الاسم الأول</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col me-2">
+              <label>اسم الاب</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col me-2">
+              <label>اسم الجد</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col">
+              <label>العائلة</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between mt-2">
+            <div class="col me-2">
+              <label>الجنس</label><br>
+              <div class="ms-5">
+                <input type="radio" name="gender" value="mail">
+                <label for="mail">ذكر</label>
+                <input type="radio" name="gender" value="femail" class="ms-3">
+                <label for="femail">انثى</label>
+              </div>
+            </div>
+            <div class="col me-2">
+              <label>تاريخ الميلاد</label>
+              <input type="text" class="form-control datepicker">
+            </div>
+            <div class="col">
+              <label>رقم السجل المدني/الإقامة</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between mt-2">
+            <div class="col me-2">
+              <label>رقم التصنيف المهني(للكادر الصحي)</label><br>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col me-2">
+              <label>رقم الجوال</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col">
+              <label>بريد إلكتروني</label>
+              <input type="email" class="form-control" placeholder="example@domain.com">
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between mt-2">
+            <div class="col me-2">
+              <label>آخر مؤهل حصل علية</label><br>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col me-2">
+              <label>التخصص</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col me-2">
+              <label>سنة الحصول عليه</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col me-2">
+              <label>الكلية</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col me-2">
+              <label>الجامعة</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col">
+              <label>الدولة</label>
+              <input type="text" class="form-control">
+            </div>
           </div>
         </div>
-      </nav>
-    <div class="container-fluied">
 
-<div class="row mt-5">
+        <hr>
+        <!-- بيانات الوظيفة -->
+        <div class="mt-4">
+          <h4>بيانات الوظيفة</h4>
+          <div class="d-flex justify-content-between">
+            <div class="me-2">
+              <label>الرقم الوظيفي</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="me-2">
+              <label>مسمى الوظيفة</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col-4 me-2">
+              <label>نوع الوظيفة</label><br>
+              <div class="d-flex justify-content-center">
+                <input type="radio" name="job-type" value="job1">
+                <label for="job1" class="ms-1">خدمة مدنية</label>
+                <input type="radio" name="job-type" value="job2" class="ms-3">
+                <label for="job2" class="ms-1">تشغيل ذاتي</label>
+              </div>
+            </div>
+            <div class="">
+              <label>مسمى برنامج التشغيل الذاتي</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
 
-  <div class="col-md-3"> 
-    <ul>
-      <li><a href="Tranning-needs.html"> الاحتياج التدريبي (الادارةالمختصة)</a></li>
-      <li><a href="MyRequests.html">طلباتي المرفوعة  (الادارة المختصة) </a></li>
-      <li><a href="AdminTrainingRequests.html">ادارة طلبات البرامج (الادمن ومنسق التدريب المركز الرئيسي)</a></li>
-      <li><a href="addNominee.html" >اضافة مرشحين</a>  </li>
-      <li><a href="add-advert.html" >اضافة اعلان عن دورة</a>  </li>
-      <li><a href="My-adv.html" >اعلاناتي المرسلة</a>  </li>
-      <li><a href="Approve-Adv.html" >  اعتماد ونشر الاعلانات</a>  </li>
-      <li><a href="adv-details.html" > تفاصيل الاعلان والاعتماد</a>  </li>
-      <li><a href="userlist.html" > ادارة التسجيل</a>  </li>
-      <li><a href="adv.html" > الاعلان </a>  </li>
-      <li><a href="register.html" > التسجيل في دورة  </a>  </li>
-      <li><a href="co-oprative-training.html" > التدريب التعاوني </a>  </li>
-    </ul>
+          <div class="d-flex justify-content-between mt-2">
+            <div class="col me-2">
+              <label>جهة العمل الحالية</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col me-2">
+              <label>المنظقة/المحافظة/الإدارة</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col me-2">
+              <label>تاريخ الالتحاق بالعمل الحالي</label>
+              <input type="text" class="form-control datepicker">
+            </div>
+            <div class="col">
+              <label>تاريخ الالتحاقة بالخدمة بالدولة</label>
+              <input type="text" class="form-control datepicker">
+            </div>
+          </div>
 
-  </div> 
+          <div class="d-flex flex-column mt-2">
+            <div class="d-flex">
+              <label>التقدير فى اخر تقويم أداء وظيفي</label><br>
+              <div class="ms-5">
+                <input type="radio" name="job-grad" value="excellent">
+                <label for="job1">ممتاز</label>
+                <input type="radio" name="job-grad" value="very-good" class="ms-3">
+                <label for="job2">جيد جداً</label>
+              </div>
+            </div>
+            <div class="mt-3">
+              <label>طبيعة العمل الحالي</label><br>
+              <textarea class="form-control" rows="8"></textarea>
+            </div>
+          </div>
 
-    <div class="col-md-8"> 
-<div class="col-md-12"><h3>نموذج اضافة اعلان عن دورة المركز الرئيسي</h3>
-  <small id="emailHelp" class="form-text text-muted">
-    متاح للادمن ومنسق التدريب في المركز الرئيسي 
-    لاضافة اعلان عن دورة واستقبال المرشحين علي الدورة 
-    <br>
-النموذج  هنا لعكس ما نفكر فيه وسيعاد ترتيبه بشكل احترافي عند التنفيذ 
-  </small>
-  <p>&nbsp;</p>
+          <div class="d-flex flex-column mt-3">
+            <label>اهم مهام العمل الفعلية التي تقوم بها</label>
+            <div class="d-flex mt-2">
+              <label>1- </label>&nbsp;
+              <input type="text" class="form-control flex-grow-1">
+            </div>
+            <div class="d-flex mt-2">
+              <label>2- </label>&nbsp;
+              <input type="text" class="form-control flex-grow-1">
+            </div>
+            <div class="d-flex mt-2">
+              <label>3- </label>&nbsp;
+              <input type="text" class="form-control flex-grow-1">
+            </div>
+            <div class="d-flex mt-2">
+              <label>4- </label>&nbsp;
+              <input type="text" class="form-control flex-grow-1">
+            </div>
+          </div>
 
-</div>
+          <div class="d-flex justify-content-between mt-3">
+            <div class="col me-2">
+              <label>اسم الرئيس المباشر</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col me-2">
+              <label>وظيفة الرئيس المباشر</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col me-2">
+              <label>رقم الجوال</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col">
+              <label>بريد الكتروني</label>
+              <input type="text" class="form-control" placeholder="example@domain.com">
+            </div>
+          </div>
+        </div>
 
-you code is here 
+        <div class="mt-4">
+          <h4>التدريب السابق</h4>
+
+          <div class="d-flex mt-2">
+            <label>هل انت مسجل حالياً في أي برنامج دراسي؟</label>
+            <div class="d-flex justify-content-center ms-5">
+              <input type="radio" name="tranning" value="yes" checked>
+              <label for="yes" class="ms-1">نعم </label>
+              <input type="radio" name="tranning" value="no" class="ms-3">
+              <label for="no" class="ms-1">لا</label>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between mt-3">
+            <div class="col me-2">
+              <label>اسم البرنامج</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col me-2">
+              <label>تاريخ الالتحاق</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col">
+              <label>مدة البرنامج</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+
+          <div class="d-flex mt-2">
+            <label>هل سبق لك الانسحاب من برنامج دراسي أو تدريبي؟</label>
+            <div class="d-flex justify-content-center ms-5">
+              <input type="radio" name="tranning2" value="yes" checked>
+              <label for="yes" class="ms-1">نعم </label>
+              <input type="radio" name="tranning2" value="no" class="ms-3">
+              <label for="no" class="ms-1">لا</label>
+            </div>
+          </div>
+
+          <div class="mt-2">
+            <label>أسباب الانسحاب</label><br>
+            <textarea class="form-control" rows="8"></textarea>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <h4>بيانات النشاط التدريبي المراد الالتحاق به</h4>
+
+          <div class="d-flex mt-2">
+            <div class="col me-4">
+              <label>نوع النشاط</label>
+              <div class="d-flex ms-2">
+                <input type="radio" name="type" value="type1" checked>
+                <label for="type1" class="ms-1">دورة تدريبية </label>
+                <input type="radio" name="type" value="type2" class="ms-3">
+                <label for="type2" class="ms-1">مؤتمر</label>
+                <input type="radio" name="type" value="type3" class="ms-3">
+                <label for="type3" class="ms-1">ملتقى</label>
+                <input type="radio" name="type" value="type4" class="ms-3">
+                <label for="type4" class="ms-1">ندوة</label>
+              </div>
+            </div>
+
+            <div class="col">
+              <label>فئة النشاط</label>
+              <div class="d-flex ms-2">
+                <input type="radio" name="category" value="type1" checked>
+                <label for="type1" class="ms-1">فني</label>
+                <input type="radio" name="category" value="type2" class="ms-3">
+                <label for="type2" class="ms-1">إداري</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between mt-3">
+            <label>عنوان النشاط</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="d-flex justify-content-between mt-3">
+            <div class="col me-2">
+              <label>مدة النشاط</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col me-2">
+              <label>تاريخ البداية</label>
+              <input type="text" class="form-control datepicker">
+            </div>
+            <div class="col">
+              <label>تكلفة النشاط</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+
+          <div class="d-flex mt-3">
+            <label>هل يوجد ارتباط مالي للتكلفة من الإدارة العامة للميزانية؟</label>
+            <div class="d-flex justify-content-center ms-5">
+              <input type="radio" name="finance-relation" value="yes" checked>
+              <label for="yes" class="ms-1">نعم </label>
+              <input type="radio" name="finance-relation" value="no" class="ms-3">
+              <label for="no" class="ms-1">لا</label>
+              <label class="ms-2">(ارفاق ما يٌثبت إذا الإجابة نعم)</label>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between mt-3">
+            <div class="col me-2">
+              <label>الجهة المنفذة</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col me-2">
+              <label>مكان الانعقاد</label>
+              <div class="d-flex justify-content-center ms-5">
+                <input type="radio" name="place" value="yes" checked>
+                <label for="yes" class="ms-1">داخلي </label>
+                <input type="radio" name="place" value="no" class="ms-3">
+                <label for="no" class="ms-1">خارجي</label>
+              </div>
+            </div>
+            <div class="col">
+              <label>المدينة/البلد (فى حال مكان النشاط خارجي)</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+
+          <div class="d-flex mt-3">
+            <label>نوع المشاركة بالنشاط</label>
+            <div class="d-flex justify-content-center ms-5">
+              <input type="radio" name="part-type" value="yes" checked>
+              <label for="yes" class="ms-1">ورقة علمية</label>
+              <input type="radio" name="part-type" value="no" class="ms-3">
+              <label for="no" class="ms-1">الحضور فقط</label>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column mt-3">
+            <label>آخر مؤتمر/تدريب خاجي تم حضورة</label>
+            <div class="d-flex ms-5 mt-1">
+              <div class="col d-flex">
+                <span class="text-nowrap">عنوان النشاط: </span>&nbsp;
+                <input type="text" class="form-control">
+              </div>
+              <div class="col d-flex ms-2">
+                <span class="text-nowrap">مكان وسنة انعقادة: </span>&nbsp;
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center mt-5 mb-5">
+          <button type="button" class="btn btn-primary me-2">ارسال الطلب</button>
+          <button type="button" class="btn btn-danger">الغاء</button>
+        </div>
+
+      </div>
+
 
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+      integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
 
-
-
-</div>
- 
-
-
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-	<script>
-	function CalCulateStaelemts(){
-	let productValue = parseFloat(document.querySelector('#productValue').value);
-	let advancedPayement = parseFloat(document.querySelector('#advancedPayement').value);
-	let persentage  = parseFloat(document.querySelector('#persentage').value); 
-	let NumberOfMonths  =parseFloat( document.querySelector('#NumberOfMonths').value); 
-	let numberOfyears = parseFloat(NumberOfMonths/12.0);
-	let totalProfit = (productValue - advancedPayement) * (persentage/100.0) * numberOfyears ;
-	document.querySelector('#numberOfyears').innerText = numberOfyears.toFixed(2);
-	document.querySelector('#totalProfit').innerText = totalProfit.toFixed(2);
-	document.querySelector('#totalWidthProfit').innerText = (productValue + totalProfit).toFixed(2);
-	document.querySelector('#satalemtValue').innerText = ((productValue + totalProfit - advancedPayement)/NumberOfMonths).toFixed(2);
-	document.querySelector('#profitPersentage').innerText =(((totalProfit )/(productValue)) * 100.0).toFixed(2);
-
-	}
-	function AttacheEvents(){
-		const elemets = document.querySelectorAll('.form-control');
-		elemets.forEach(el => el.addEventListener('click', event => {
-		  CalCulateStaelemts()
-		}));
-		elemets.forEach(el => el.addEventListener('keydown', event => {
-		  CalCulateStaelemts()
-		}));
-		elemets.forEach(el => el.addEventListener('keyup', event => {
-		  CalCulateStaelemts()
-		}));
-	}
-	
-	
-	window.addEventListener('load', function () {
-		AttacheEvents();
-	})
-	</script>
-	
-	<script src="data.js"></script>
-
-<script>
-
-console.log(data[0]['جدول البيانات']);
-
-var newArray = data[0]['جدول البيانات'].filter(function (el) {
-  return el.الأهمية.trim().match('حالًا');
-});
-
-console.log(newArray);
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js" ></script>
-
-
-<script>
-const ctx = document.getElementById('myChart').getContext('2d');
-const myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
-</script>
+    <script>
+      $('.datepicker').datepicker({
+        format: 'mm/dd/yyyy',
+        startDate: '-3d'
+      });  </script>
 </body>
+
 </html>
-
-
