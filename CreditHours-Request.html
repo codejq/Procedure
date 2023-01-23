@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" style="direction: rtl;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-LPvXVVAlyPoBSGkX8UddpctDks+1P4HG8MhT7/YwqHtJ40bstjzCqjj+VVVDhsCo" crossorigin="anonymous">
+  <style>
+    .form-control {
+      direction: rtl;
+      font-size: 20px;
+    }
+
+    .data-out {
+      color: #146fb0;
+      font-size: 20px;
+      font-weight: 900;
+      padding: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluied">
+
+    <div class="row mt-5 mb-5">
+
+      <div class="col-md-3">
+        <ul id="menu"></ul>
+      </div>
+
+      <div class="col-md-8">
+        <div class="col-md-12">
+          <h3>أعتماد ساعات تعليمية لبرنامج تدريبي </h3>
+          <small id="emailHelp" class="form-text text-muted">
+            يقوم المتدرب بتعبئة النوذج وارساله للاعتماد
+          </small>
+          <p>&nbsp;</p>
+
+        </div>
+
+        <label>اليوم 1</label>
+        <table class="table table-striped table-hover table-bordered">
+          <thead>
+            <th>#</th>
+            <th>نوع المادة العلمية</th>
+            <th>عنوان المادة العلمية</th>
+            <th>المدرب</th>
+            <th>من</th>
+            <th>الى</th>
+          </thead>
+          <tbody class="hours-table">
+          </tbody>
+        </table>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+  <script src="menu.js"></script>
+
+  <script>
+    window.onload = function () {
+      for (i = 1; i <= 5; i++) {
+        let row = document.createElement("tr");
+        let innerHTML = `<td>${i}</td>`;
+        for (d = 1; d <= 5; d++) {
+          innerHTML += '<td><input type="text" class="form-control"></td>';
+        }
+        row.innerHTML = innerHTML;
+
+        [...document.getElementsByClassName("hours-table")].forEach(table => table.appendChild(row));
+      }
+    }
+  </script>
+</body>
+
+</html>
