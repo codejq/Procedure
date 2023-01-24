@@ -8,6 +8,8 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.rtl.min.css"
     integrity="sha384-LPvXVVAlyPoBSGkX8UddpctDks+1P4HG8MhT7/YwqHtJ40bstjzCqjj+VVVDhsCo" crossorigin="anonymous">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
   <style>
     .form-control {
       direction: rtl;
@@ -64,7 +66,7 @@
       </div>
     </div>
   </nav>
-  <div class="container-fluied">
+  <div class="container-fluied mb-5">
 
     <div class="row mt-5 mb-5">
 
@@ -82,7 +84,7 @@
 
         </div>
 
-        <label>اليوم 1</label>
+        <h4>اليوم 1</h4>
         <table class="table table-striped table-hover table-bordered">
           <thead>
             <th>#</th>
@@ -96,11 +98,250 @@
           </tbody>
         </table>
 
+        <h4>اليوم 2</h4>
+        <table class="table table-striped table-hover table-bordered">
+          <thead>
+            <th>#</th>
+            <th>نوع المادة العلمية</th>
+            <th>عنوان المادة العلمية</th>
+            <th>المدرب</th>
+            <th>من</th>
+            <th>الى</th>
+          </thead>
+          <tbody class="hours-table">
+          </tbody>
+        </table>
+
+        <div class="mt-5">
+          <h3>السيرة الذاتية للمدرب</h3>
+          <div class="mt-5">
+            <h5>معلومات المتحدث</h5>
+            <hr>
+
+            <div class="d-flex mt-3">
+              <div class="col d-flex align-items-center me-3">
+                <label>المتحدث مسجل لدى الهيئة</label><br>
+                <div class="ms-5">
+                  <input type="radio" name="registered" value="yes" checked>
+                  <label for="yes">نعم</label>
+                  <input type="radio" name="registered" value="no" class="ms-3">
+                  <label for="no">لا</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex mt-3">
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">عدد ساعات التحدث بالنشاط التدريبي</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">رقم التسجيل المهني</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+
+            <div class="d-flex mt-3">
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">تاريخ بداية التسجيل</label>
+                <input type="text" class="form-control datepicker">
+              </div>
+
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">تاريخ نهاية التسجيل</label>
+                <input type="text" class="form-control datepicker">
+              </div>
+            </div>
+
+            <div class="d-flex mt-3">
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">الاسم الاول عربي</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">الاسم الاب عربي</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">الاسم الجد عربي</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">الاسم العائلة عربي</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+
+            <div class="d-flex mt-3">
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">الاسم الاول انجليزي</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">الاسم الاب انجليزي</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">الاسم الجد انجليزي</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">الاسم العائلة انجليزي</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+
+            <div class="d-flex mt-3">
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">الجنسية</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">بلد الإقامة</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+
+            <div class="d-flex mt-3">
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">الجنس</label>
+                <div class="ms-5">
+                  <input type="radio" name="gender" value="mail">
+                  <label for="mail">ذكر</label>
+                  <input type="radio" name="gender" value="femail" class="ms-3">
+                  <label for="femail">انثى</label>
+                </div>
+              </div>
+
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">الديانة</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+
+            <div class="d-flex mt-3">
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">البريد الالكتروني</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">رقم الجوال</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+
+            <div class="d-flex mt-3">
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">درجة التصنيف المهني</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">التخصص</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="mt-5">
+            <h5>معلومات الهوية</h5>
+            <hr>
+
+            <div class="d-flex mt-3">
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">نوع الوثيقة</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col"></div>
+            </div>
+
+            <div class="d-flex mt-3">
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">رقم الوثيقة</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">تاريخ الانتهاء</label>
+                <input type="text" class="form-control datepicker">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="mt-5">
+            <h5>السيرة الذاتية</h5>
+            <hr>
+
+            <div class="d-flex mt-3">
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">جهة العمل</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">اللقب الأكاديمي/المهني</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+
+            <h5 class="mt-3">الشهادات المؤهلات</h5>
+            <div class="d-flex mt-2">
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">الشهادة</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">جهة اصدارها</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="col d-flex align-items-center">
+                <label class="text-nowrap me-2">تاريخ اصدارها</label>
+                <input type="text" class="form-control datepicker">
+              </div>
+            </div>
+
+            <div class="d-flex mt-3">
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">عدد المنشورات العلمية</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="col d-flex align-items-center me-3">
+                <label class="text-nowrap me-2">عدد المشاركات العلمية</label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="col"></div>
+            </div>
+
+            <div class="mt-2">
+              <div class="col">
+                <label class="text-nowrap me-2">الخبرات المتعلقة بالنشاط لآخر 3 سنوات</label>
+                <textarea rows="3" class="form-control mt-1"></textarea>
+              </div>
+            </div>
+          </div>
 
 
 
-
+        </div>
       </div>
+
+
+
     </div>
   </div>
 
@@ -109,6 +350,19 @@
     crossorigin="anonymous"></script>
 
   <script src="menu.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+    integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+
+  <script>
+    $('.datepicker').datepicker({
+      format: 'mm/dd/yyyy',
+      startDate: '-3d'
+    });  
+  </script>
 
   <script>
     for (i = 1; i <= 5; i++) {
@@ -119,7 +373,8 @@
       }
       row.innerHTML = innerHTML;
 
-      [...document.getElementsByClassName("hours-table")].forEach(table => table.appendChild(row));
+      [...document.getElementsByClassName("hours-table")]
+        .forEach(table => table.appendChild(row.cloneNode(true)));
     }
   </script>
 </body>
