@@ -15,6 +15,7 @@ const menu = [
     { href: "Coordinator-TrainingRequests.html", text: "ادارة طلبات التدريب (منسق المركز ثم مدير المركز ثم المدير العام)" },
     { href: "CreditHours-Request.html", text: "طلب اعتماد ساعات تعليمية لبرنامج تدريبي " },
     { href: "CreditHours-List.html", text: "الساعات التعليمية المعتمدة" },
+    { href: "Co-operative-Training.html", text: "التدريب التعاوني" },
 ]
 
 window.onload = function () {
