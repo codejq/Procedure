@@ -11,9 +11,10 @@ const menu = [
     { href: "adv.html", text: " الاعلان " },
     { href: "register.html", text: " التسجيل في دورة " },
     { href: "training-request.html", text: " طلب تدريب" },
-    { href: "My-TrainingRequests.html", text: "قائمة طلبات للتدريب (متدرب)" },
+    { href: "My-TrainingRequests.html", text: "قائمة طلبات التدريب (متدرب)" },
     { href: "Coordinator-TrainingRequests.html", text: "ادارة طلبات التدريب (منسق المركز ثم مدير المركز ثم المدير العام)" },
     { href: "CreditHours-Request.html", text: "طلب اعتماد ساعات تعليمية لبرنامج تدريبي " },
+    { href: "CreditHours-List.html", text: "الساعات التعليمية المعتمدة" },
 ]
 
 window.onload = function () {

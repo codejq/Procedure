@@ -84,7 +84,15 @@
 
         </div>
 
-        <h4>اليوم 1</h4>
+        <div class="d-flex mt-3">
+          <div class="col d-flex align-items-center me-3">
+            <h5 class="text-nowrap me-2">اسم البرنامج التدريبية</h5>
+            <input type="text" class="form-control">
+          </div>
+          <div class="col"></div>
+        </div>
+
+        <h5 class="mt-4">اليوم 1</h5>
         <table class="table table-striped table-hover table-bordered">
           <thead>
             <th>#</th>
@@ -98,7 +106,7 @@
           </tbody>
         </table>
 
-        <h4>اليوم 2</h4>
+        <h5>اليوم 2</h5>
         <table class="table table-striped table-hover table-bordered">
           <thead>
             <th>#</th>
@@ -333,15 +341,19 @@
                 <textarea rows="3" class="form-control mt-1"></textarea>
               </div>
             </div>
+
+            <div class="d-flex mt-3">
+              <label class="text-nowrap me-2">ارفاق السيرة الذاتية</label>
+              <input type="file" accept=".pdf,.doc,.docx,.txt">
+            </div>
           </div>
 
 
-
         </div>
+        
+        <button type="button" class="btn btn-primary mt-5 mb-4">ارسال للاعتماد</button>
       </div>
-
-
-
+        
     </div>
   </div>
 
@@ -365,10 +377,23 @@
   </script>
 
   <script>
+    let selectColumn = `
+          <select class="form-select" aria-label="Default select example">
+            <option>ورشة </option>
+            <option>محاكة </option>    
+            <option>جلسة نقاش</option>
+            <option selected>محاضرة</option>
+            <option>علمية مقدمة</option>
+            <option>افتتاحية عرض حالة</option>
+            <option>مقدمة علمية</option>
+            <option>تدريب عملي</option>
+            <option>اختبارات</option>
+          </select>`;
     for (i = 1; i <= 5; i++) {
       let row = document.createElement("tr");
       let innerHTML = `<td>${i}</td>`;
-      for (d = 1; d <= 5; d++) {
+      innerHTML += `<td>${selectColumn}</td>`;
+      for (d = 1; d <= 4; d++) {
         innerHTML += '<td><input type="text" class="form-control"></td>';
       }
       row.innerHTML = innerHTML;
