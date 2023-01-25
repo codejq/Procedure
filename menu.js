@@ -12,10 +12,13 @@ const menu = [
     { href: "register.html", text: " التسجيل في دورة " },
     { href: "training-request.html", text: " طلب تدريب" },
     { href: "My-TrainingRequests.html", text: "قائمة طلبات التدريب (متدرب)" },
-    { href: "Coordinator-TrainingRequests.html", text: "ادارة طلبات التدريب (منسق المركز ثم مدير المركز ثم المدير العام)" },
+    { href: "Coordinator-TrainingRequests.html", text: "ادارة طلبات التدريب (منسق/ مدير المركز  ثم المدير العام)" },
     { href: "CreditHours-Request.html", text: "طلب اعتماد ساعات تعليمية لبرنامج تدريبي " },
     { href: "CreditHours-List.html", text: "الساعات التعليمية المعتمدة" },
     { href: "Co-operative-Training.html", text: "التدريب التعاوني" },
+    { href: "Coordinator-Co-operative-Training.html", text: "ادارة طلبات التدريب التعاوني (منسق/ مدير المركز)" },
+    { href: "Administration-Co-operative-Training.html", text: "ادارة طلبات التدريب التعاوني (منسق الادارة المختصة)" },
+    { href: "Co-operative-Training-List.html", text: "طلبات التدريب التعاوني (متدرب)" },
 ]
 
 window.onload = function () {
