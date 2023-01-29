@@ -21,10 +21,8 @@ const menu = [
     { href: "Co-operative-Training-List.html", text: "طلبات التدريب التعاوني (متدرب)" },
 ]
 
-window.onload = function () {
-    menu.forEach(item => {
-        let node = document.createElement("li");
-        node.innerHTML = `<a href="${item.href}">${item.text}</a>`;
-        document.getElementById("menu").appendChild(node);
-    });
-};
+menu.forEach(item => {
+    let node = document.createElement("li");
+    node.innerHTML = `<a href="${item.href}">${item.text}</a>`;
+    document.getElementById("menu").appendChild(node);
+});

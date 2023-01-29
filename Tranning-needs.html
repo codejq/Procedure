@@ -1,426 +1,501 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl" style="direction: rtl;">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-LPvXVVAlyPoBSGkX8UddpctDks+1P4HG8MhT7/YwqHtJ40bstjzCqjj+VVVDhsCo" crossorigin="anonymous">
-<style>
-.form-control{
-direction: rtl;
-font-size:20px;
-}
-.data-out{
-	color: #146fb0;
-	font-size: 20px;
-	font-weight: 900;
-	padding: 20px;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-LPvXVVAlyPoBSGkX8UddpctDks+1P4HG8MhT7/YwqHtJ40bstjzCqjj+VVVDhsCo" crossorigin="anonymous">
+  <style>
+    .form-control {
+      direction: rtl;
+      font-size: 20px;
+    }
+
+    .data-out {
+      color: #146fb0;
+      font-size: 20px;
+      font-weight: 900;
+      padding: 20px;
+    }
+  </style>
 
 </head>
+
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Logo</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-		  
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluied">
+
+    <div class="row mt-5">
+
+      <div class="col-md-3">
+        <ul id="menu"></ul>
+      </div>
+
+      <div class="col-md-8">
+        <div class="col-md-12">
+          <h3>نموذج رفع الاحتياج التدريبي (الادارة الفرعية)</h3>
+          <small id="emailHelp" class="form-text text-muted">
+            متاح للادرات الفرعية لرفع الاحتياج التدريبي الي المركز الرئيسي ويظل الطلب في انتظار موافقة
+            المركز الرئيسي
+            <br>
+            النموذج هنا لعكس ما نفكر فيه وسيعاد ترتيبه بشكل احترافي عند التنفيذ
+          </small>
+          <p>&nbsp;</p>
+
+        </div>
+
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">عنوان النشاط التدريبي باللغة العربية :</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           </div>
-        </div>
-      </nav>
-    <div class="container-fluied">
 
-<div class="row mt-5">
+          <div class="form-group mt-2">
+            <label for="exampleInputEmail1">عنوان النشاط التدريبي باللغة الإنجليزية:</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
 
-		<div class="col-md-3"> 
-      <ul id="menu"></ul>
-    </div> 
+          <div class="form-group d-flex flex-wrap mt-2">
+            <label class="col-12">نوع التدريب:</label>
 
-    <div class="col-md-8"> 
-<div class="col-md-12"><h3>نموذج رفع الاحتياج التدريبي (الادارة الفرعية)</h3>
-  <small id="emailHelp" class="form-text text-muted">
-    متاح للادرات الفرعية لرفع الاحتياج التدريبي الي المركز الرئيسي ويظل الطلب في انتظار موافقة 
-    المركز الرئيسي 
-    <br>
-النموذج  هنا لعكس ما نفكر فيه وسيعاد ترتيبه بشكل احترافي عند التنفيذ 
-  </small>
-  <p>&nbsp;</p>
+            <label class="mx-3">صحي
+              <input type="checkbox" checked="checked">
+            </label>
+            <label class="mx-3">إداري
+              <input type="checkbox">
+            </label>
+            <label class="mx-3">مشروع
+              <input type="checkbox">
+            </label>
+            <label class="mx-3 text-nowrap">صحي يتطلب اعتماد من الهيئة السعودية للتخصصات
+              <input type="checkbox" checked="checked">
+            </label>
+          </div>
 
-</div>
-
-      <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1">عنوان النشاط التدريبي باللغة العربية :</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  >
-          
-        </div>
-
-        <div class="form-group">
-          <label for="exampleInputEmail1">عنوان النشاط التدريبي باللغة الإنجليزية:</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  >
-          
-        </div>
+          <div class="row mt-2">
+            <div class="form-group col-md-4">
+              <label for="inputState"> تنفيذ التدريب: </label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>عن بعد</option>
+                <option>حضوري</option>
+                <option> حضوري وعن بعد</option>
+              </select>
+            </div>
 
 
-        <div class="form-group">
-          <label for="exampleInputEmail1">البريد:</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-<div class="row">
-        <div class="form-group col-md-4">
-          <label for="inputState">نوع التدريب:</label>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>صحي</option>
-            <option>صحي</option>    
-            <option> إداري</option>
-            <option> مشروع</option>
-            <option> يتطلب اعتماد من الهيئة السعودية للتخصصات </option>
-          </select>
-        </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">درجة الأهمية: </label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>عالي </option>
+                <option>متوسط</option>
+                <option>منخفض</option>
+              </select>
+            </div>
 
-        <div class="form-group col-md-4">
-          <label for="inputState">  تنفيذ التدريب:   </label>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>عن بعد</option>
-            <option>حضوري</option>    
-            <option> حضوري وعن بعد</option>
-          </select>
-        </div>
+            <div class="form-group row mt-2">
+              <label for="inputState">مجال التدريب: </label>
 
-        
-        <div class="form-group col-md-4">
-          <label for="inputState">درجة الأهمية:    </label>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>عالي </option>
-            <option>متوسط</option>    
-            <option>منخفض</option>
-          </select>
-        </div>
+              <div class="col-md-4">
+                <select class="form-select" onchange="displayChange('trainingOther', this.value === 'other')">
+                  <option>صحة عامة </option>
+                  <option>طبي علاجي</option>
+                  <option>تمريض وقبالة</option>
+                  <option>تخصصات صحية مساندة</option>
+                  <option>إداري</option>
+                  <option>موارد بشرية</option>
+                  <option>مالي</option>
+                  <option>تقني</option>
+                  <option>محاسبة</option>
+                  <option>هندسي</option>
+                  <option value="other">اخرى</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <input type="text" class="form-control" id="trainingOther" style="display: none;"
+                  placeholder="مجال التدريب">
+              </div>
+            </div>
 
-        <div class="form-group col-md-4">
-          <label for="inputState">مجال التدريب: </label>
-          <select class="form-select" aria-label="Default select example">
-            <option>أخرى                             </option>
-            <option>خدمات طبية مساعدة                </option>
-            <option>خدمات علاجية                      </option>
-            <option>مكافحة الامراض المعدية            </option>
-            <option>مكافحة الأمراض الوراثية والمزمنة  </option>
-            <option>ترميز طبي                        </option>
-            <option>توعية الصحية                     </option>
-            <option>مهارات سلوكية ووظيفية عامة       </option>
-            <option>بحوث صحية                        </option>
-            <option>موارد بشرية                      </option>
-            <option>قانوني                           </option>
-            <option>محاسبة                           </option>
-            <option>هندسي                            </option>
-            <option>إداري	                           </option>
-            <option>احصاء                            </option>
-            <option>مراجعة داخلية                    </option>
-          </select>
-        </div>
-        
-        <div class="form-group">
-          <label for="exampleInputEmail1">الهدف العام من النشاط التدريبي/ المشروع </label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <div class="form-group">
-          <hr >
-          <label for="exampleInputEmail1">الأهداف النوعية (التفصيلية) للنشاط التدريبي/ المشروع </label>
-          <br>
-          <label for="exampleInputEmail1">1- </label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  >
-          <label for="exampleInputEmail1">2- </label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  >
-          <label for="exampleInputEmail1">3- </label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  >
-          <label for="exampleInputEmail1">4- </label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  >
-          <label for="exampleInputEmail1">5- </label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  >
-          <hr>
-        </div>
-        
-        <div class="form-group">
-          <label for="exampleInputEmail1" >شروط الالتحاق بالنشاط التدريبي/ المشروع </label>
-          <br>
-          <label for="inputState">المؤهل العلمي</label>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>لا يشترط </option>
-            <option selected>ثانوي </option>
-            <option>بكالوريوس</option>    
-            <option>ماجستير</option>
-            <option>دكتوراة</option>
-          </select>
-          <label for="inputState">التخصص:</label>
-          <select class="form-select" aria-label="Default select example">
-            <option>أخرى                             </option>
-            <option>خدمات طبية مساعدة                </option>
-            <option>خدمات علاجية                      </option>
-            <option>مكافحة الامراض المعدية            </option>
-            <option>مكافحة الأمراض الوراثية والمزمنة  </option>
-            <option>ترميز طبي                        </option>
-            <option>توعية الصحية                     </option>
-            <option>مهارات سلوكية ووظيفية عامة       </option>
-            <option>بحوث صحية                        </option>
-            <option>موارد بشرية                      </option>
-            <option>قانوني                           </option>
-            <option>محاسبة                           </option>
-            <option>هندسي                            </option>
-            <option>إداري	                           </option>
-            <option>احصاء                            </option>
-            <option>مراجعة داخلية                    </option>
-          </select>
+            <div class="form-group mt-2">
+              <label for="exampleInputEmail1">الاحتياج التدريبي (سبب طلب النشاط /تحديد الفجوة التدريبية):</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+            </div>
 
-          <label for="inputState">جهة العمل:</label>
-          <select class="form-select" aria-label="Default select example">
-            <option>وزارة الصحة                             </option>
-            <option>لا يشترط            </option>
-          </select>
+            <div class="form-group row mt-2">
+              <label for="exampleInputEmail1">أدوات تحديد الاحتياج:</label>
+              <div class="col-md-4">
+                <select class="form-select" onchange="displayChange('trainingToolsOther', this.value === 'other')">
+                  <option>استبيان</option>
+                  <option>تحليل اداء موظف</option>
+                  <option>تقرير</option>
+                  <option>العملاء</option>
+                  <option value="other">اخرى</option>
+                  <option>لايوجد</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <input type="text" class="form-control" id="trainingToolsOther" style="display: none;"
+                  placeholder="ادوات تحديد الاحتياج">
+              </div>
+            </div>
 
-          <label for="inputState">طبيعة العمل:</label>
-          <select class="form-select" aria-label="Default select example">
-            <option>أخرى                             </option>
-            <option>خدمات طبية مساعدة                </option>
-            <option>خدمات علاجية                      </option>
-            <option>مكافحة الامراض المعدية            </option>
-            <option>مكافحة الأمراض الوراثية والمزمنة  </option>
-            <option>ترميز طبي                        </option>
-            <option>توعية الصحية                     </option>
-            <option>مهارات سلوكية ووظيفية عامة       </option>
-            <option>بحوث صحية                        </option>
-            <option>موارد بشرية                      </option>
-            <option>قانوني                           </option>
-            <option>محاسبة                           </option>
-            <option>هندسي                            </option>
-            <option>إداري	                           </option>
-            <option>احصاء                            </option>
-            <option>مراجعة داخلية                    </option>
-          </select>
-            <label for="exampleInputEmail1">سنوات الخبرة</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  >
-            <label for="inputState">اجادة الانجليزية</label>
-            <select class="form-select" aria-label="Default select example">
-              <option>لا يشترط            </option>
-              <option>يشترط    </option>
-            </select>
-          <hr>
-        </div>
+            <div class="form-group mt-2">
+              <label for="exampleInputEmail1">الهدف العام من النشاط</label>
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
 
+            <div class="form-group mt-2">
+              <label for="exampleInputEmail1">الأهداف النوعية (التفصيلية) للنشاط</label>
+              <div class="d-flex align-items-center mt-2">
+                <label>1- </label>&nbsp;
+                <input type="text" class="form-control flex-grow-1">
+              </div>
+              <div class="d-flex align-items-center mt-2">
+                <label>2- </label>&nbsp;
+                <input type="text" class="form-control flex-grow-1">
+              </div>
+              <div class="d-flex align-items-center mt-2">
+                <label>3- </label>&nbsp;
+                <input type="text" class="form-control flex-grow-1">
+              </div>
+              <div class="d-flex align-items-center mt-2">
+                <label>4- </label>&nbsp;
+                <input type="text" class="form-control flex-grow-1">
+              </div>
+              <div class="d-flex align-items-center mt-2">
+                <label>5- </label>&nbsp;
+                <input type="text" class="form-control flex-grow-1">
+              </div>
+              <hr>
+            </div>
 
-        <div class="form-group">
-          <hr >
-          <label for="exampleInputEmail1">  القدرات الـمتوقع اكتسابها بنهاية النشاط التدريبي/ المشروع </label>
-          <br>
-          <label for="exampleInputEmail1">1- </label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  >
-          <label for="exampleInputEmail1">2- </label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  >
-          <label for="exampleInputEmail1">3- </label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  >
-          <label for="exampleInputEmail1">4- </label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  >
-          <label for="exampleInputEmail1">5- </label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  >
-          <hr>
-        </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">الفئة المستهدفة:</label>
+              <br>
+              <label for="inputState">المؤهل العلمي</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>لا يشترط </option>
+                <option selected>ثانوي </option>
+                <option>بكالوريوس</option>
+                <option>ماجستير</option>
+                <option>دكتوراة</option>
+              </select>
+              <label for="inputState">التخصص:</label>
+              <select class="form-select" aria-label="Default select example">
+                <option>صحة عامة </option>
+                <option>طبي علاجي</option>
+                <option>تمريض وقبالة</option>
+                <option>تخصصات صحية مساندة</option>
+                <option>إداري</option>
+                <option>موارد بشرية</option>
+                <option>مالي</option>
+                <option>تقني</option>
+                <option>محاسبة</option>
+                <option>هندسي</option>
+                <option value="other">اخرى</option>
+              </select>
 
-        
-        <div class="form-group col-md-4">
-          <label for="inputState">آلية تقييم المتدربين:</label>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>لايوجد </option>
-            <option>اختبار مبدئي</option>    
-            <option>واجبات</option>
-            <option>تنفيذ مشروع</option>
-            <option> تقييم من المدرب </option>
-          </select>
-        </div>
-        
+              <label for="inputState">جهة العمل:</label>
+              <select class="form-select" aria-label="Default select example">
+                <option>وزارة الصحة </option>
+                <option>لا يشترط </option>
+              </select>
 
-        <div class="form-group">
-          
-          <label for="exampleInputEmail1"> الاشتراطات الواجب توفرها في المدرب </label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-        </div>
-        
+              <label for="inputState">طبيعة العمل:</label>
+              <select class="form-select" aria-label="Default select example">
+                <option>أخرى </option>
+                <option>خدمات طبية مساعدة </option>
+                <option>خدمات علاجية </option>
+                <option>مكافحة الامراض المعدية </option>
+                <option>مكافحة الأمراض الوراثية والمزمنة </option>
+                <option>ترميز طبي </option>
+                <option>توعية الصحية </option>
+                <option>مهارات سلوكية ووظيفية عامة </option>
+                <option>بحوث صحية </option>
+                <option>موارد بشرية </option>
+                <option>قانوني </option>
+                <option>محاسبة </option>
+                <option>هندسي </option>
+                <option>إداري </option>
+                <option>احصاء </option>
+                <option>مراجعة داخلية </option>
+              </select>
+              <label for="exampleInputEmail1">سنوات الخبرة</label>
+              <input type="number" min="1" max="20" value="1" class="form-control prevent-wrtie">
+              <label for="inputState">اجادة الانجليزية</label>
+              <select class="form-select" aria-label="Default select example">
+                <option>لا يشترط </option>
+                <option>يشترط </option>
+              </select>
 
-        <div class="form-group">
-          <h5>متطلبات التنفيذ</h5>
-          <label for="exampleInputEmail1">المدينة</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  >
-          <label for="exampleInputEmail1">مقر التنفيذ</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  >
-          <label for="exampleInputEmail1">مدة النشاط </label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  >
-          <label for="exampleInputEmail1">تاريخ التنفيذ</label>
-          <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  >
-          <label for="exampleInputEmail1">عدد المتدربين </label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  >
-          <label for="exampleInputEmail1">عدد المدربين </label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  >
-          <label for="inputState">نوع المشاط  :</label>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>محاضرات </option>
-            <option>ورشة عمل  </option>    
-            <option>ندوة</option>
-            <option>مؤتمر </option>
-            <option>  نشاط  </option>
-          </select>
-          <label for="inputState"> الفئات المستهدفه  :</label>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>طبيب </option>
-            <option>تمريض </option>    
-            <option>مختبرات</option>
-            <option>اشعة </option>
-            <option>  صيدله  </option>
-            <option>  اداري  </option>
-            <option>  العاملين في مجال التدريب   </option>
-          </select>
-          <label for="exampleInputEmail1"> متطلبات اخرى </label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-        </div>
+              <label class="mt-2">الوحدات المستهدفة</label>
+              <textarea class="form-control" rows="2"></textarea>
+            </div>
+
+            <hr class="mt-3">
+            <div class="form-group mt-2">
+              <label for="exampleInputEmail1">المعارف المتوقع اكتسابها بنهاية النشاط</label>
+              <div class="d-flex align-items-center mt-2">
+                <label>1- </label>&nbsp;
+                <input type="text" class="form-control flex-grow-1">
+              </div>
+              <div class="d-flex align-items-center mt-2">
+                <label>2- </label>&nbsp;
+                <input type="text" class="form-control flex-grow-1">
+              </div>
+              <div class="d-flex align-items-center mt-2">
+                <label>3- </label>&nbsp;
+                <input type="text" class="form-control flex-grow-1">
+              </div>
+              <div class="d-flex align-items-center mt-2">
+                <label>4- </label>&nbsp;
+                <input type="text" class="form-control flex-grow-1">
+              </div>
+              <div class="d-flex align-items-center mt-2">
+                <label>5- </label>&nbsp;
+                <input type="text" class="form-control flex-grow-1">
+              </div>
+            </div>
+
+            <hr class="mt-3">
+            <div class="form-group mt-2">
+              <label for="exampleInputEmail1">المهارات المتوقع اكتسابها بنهاية النشاط</label>
+              <div class="d-flex align-items-center mt-2">
+                <label>1- </label>&nbsp;
+                <input type="text" class="form-control flex-grow-1">
+              </div>
+              <div class="d-flex align-items-center mt-2">
+                <label>2- </label>&nbsp;
+                <input type="text" class="form-control flex-grow-1">
+              </div>
+              <div class="d-flex align-items-center mt-2">
+                <label>3- </label>&nbsp;
+                <input type="text" class="form-control flex-grow-1">
+              </div>
+              <div class="d-flex align-items-center mt-2">
+                <label>4- </label>&nbsp;
+                <input type="text" class="form-control flex-grow-1">
+              </div>
+              <div class="d-flex align-items-center mt-2">
+                <label>5- </label>&nbsp;
+                <input type="text" class="form-control flex-grow-1">
+              </div>
+            </div>
 
 
+            <hr class="mt-3">
+            <div class="form-group row mt-2">
+              <label for="inputState">آلية تقييم المتدربين:</label>
+              <div class="col-md-4">
+                <select class="form-select" onchange="displayChange('evaluationMechanism', this.value === 'other')">
+                  <option selected>اختبار</option>
+                  <option> تقييم عملي </option>
+                  <option>استبيان</option>
+                  <option>مشروع</option>
+                  <option>واجبات</option>
+                  <option value="other">اخرى</option>
+                  <option>لايوجد </option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <input type="text" class="form-control" id="evaluationMechanism" style="display: none;"
+                  placeholder="آلية التقييم">
+              </div>
+            </div>
 
-</div>
-<hr>
-<button type="submit" class="btn btn-primary"> حفظ لوقت لاحق </button>  
-        <button type="submit" class="btn btn-primary">ارسال الطلب </button>
-      </form>
+            <div class="form-group row mt-3">
+              <label for="inputState">تقييم النشاط:</label>
+              <div class="col-md-4">
+                <select class="form-select" onchange="displayChange('eventEvaluation', this.value === 'other')">
+                  <option selected>استبيان</option>
+                  <option>مقابلات</option>
+                  <option value="other">اخرى</option>
+                  <option>لايوجد </option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <input type="text" class="form-control" id="eventEvaluation" style="display: none;"
+                  placeholder="آلية التقييم">
+              </div>
+            </div>
 
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+            <hr class="mt-3">
+            <div class="form-group mt-2">
+              <h5> الاشتراطات الواجب توفرها في المدرب </h5>
+
+              <label class="text-nowrap mt-2 me-3">المؤهل العلمي</label>
+              <div class="col-md-4 pe-3">
+                <select class="form-select">
+                  <option selected>بكالوريوس</option>
+                  <option>ماجستير</option>
+                  <option>دكتوراة</option>
+                </select>
+              </div>
+
+              <div class="row mt-2">
+                <label>التخصص:</label>
+                <div class="col-md-4">
+                  <select class="form-select" onchange="displayChange('specialization', this.value === 'other')">
+                    <option>صحة عامة </option>
+                    <option>طبي علاجي</option>
+                    <option>تمريض وقبالة</option>
+                    <option>تخصصات صحية مساندة</option>
+                    <option>إداري</option>
+                    <option>موارد بشرية</option>
+                    <option>مالي</option>
+                    <option>تقني</option>
+                    <option>محاسبة</option>
+                    <option>هندسي</option>
+                    <option value="other">اخرى</option>
+                  </select>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                  <input type="text" class="form-control" id="specialization" style="display: none;"
+                    placeholder="مجال التدريب">
+                </div>
+              </div>
+
+              <label class="mt-2">سنوات الخبرة فى المجال</label>
+              <input type="number" min="1" max="20" value="1" class="form-control prevent-wrtie">
+
+              <label class="mt-2">الخبرات والمعارف المطلوبة</label>
+              <textarea rows="2" class="form-control"></textarea>
+            </div>
+
+
+            <hr class="mt-3">
+            <div class="form-group">
+              <h5>بيانات التنفيذ</h5>
+              <label for="exampleInputEmail1">المدينة</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label for="exampleInputEmail1">المقر</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label for="exampleInputEmail1">المدة(بالأيام)</label>
+              <input type="number" min="1" max="500" value="20" class="form-control prevent-wrtie">
+              <label for="exampleInputEmail1">التاريخ</label>
+              <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label for="exampleInputEmail1">عدد المدربين </label>
+              <input type="number" min="1" max="20" value="2" class="form-control prevent-wrtie">
+              <label for="exampleInputEmail1">عدد المتدربين </label>
+              <input type="number" min="1" max="20" value="10" class="form-control prevent-wrtie">
+
+              <div class="form-group row mt-2">
+                <label>طرق واساليب التدريب</label>
+                <div class="col-md-4">
+                  <select class="form-select" onchange="displayChange('eventType', this.value === 'other')">
+                    <option selected>محاضرات </option>
+                    <option>ورش عمل </option>
+                    <option>ندوة</option>
+                    <option>عملي </option>
+                    <option value="other">اخرى</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="eventType" style="display: none;">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group d-flex flex-wrap mt-2">
+              <label class="col-12">متطلبات التنفيذ:</label>
+
+              <label class="mx-3 mt-2">قاعة محاضرات
+                <input type="checkbox" checked>
+              </label>
+              <label class="mx-3 mt-2">جهاز عرض
+                <input type="checkbox">
+              </label>
+              <label class="mx-3 mt-2">سبورة ورقية
+                <input type="checkbox">
+              </label>
+              <label class="mx-3 mt-2 text-nowrap">لافتة اعلانية
+                <input type="checkbox" checked="checked">
+              </label>
+              <label class="mx-3 mt-2 text-nowrap">بطاقات صدرية
+                <input type="checkbox" checked="checked">
+              </label>
+              <label class="mx-3 mt-2 text-nowrap">ملف تعليم
+                <input type="checkbox" checked="checked">
+              </label>
+              <label class="mx-3 mt-2 text-nowrap">نسخة من المادة العلمية
+                <input type="checkbox" checked="checked">
+              </label>
+              <label class="mx-3 mt-2">معمل حاسب
+                <input type="checkbox">
+              </label>
+              <label class="mx-3 mt-2">معمل محاكاة
+                <input type="checkbox">
+              </label>
+              <label class="mx-3 mt-2">اخرى
+                <input type="checkbox" onchange="displayChange('requirement', this.checked)">
+              </label>
+
+              <textarea cols="2" class="form-control mt-2" id="requirement" style="display: none;"></textarea>
+            </div>
+
+            <hr class="mt-3">
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary"> حفظ لوقت لاحق </button>
+              <button type="submit" class="btn btn-primary">ارسال الطلب </button>
+            </div>
+        </form>
+
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+
     </div>
 
 
 
-
-
-</div>
- 
-
-
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
   <script src="menu.js"></script>
-	<script>
-	function CalCulateStaelemts(){
-	let productValue = parseFloat(document.querySelector('#productValue').value);
-	let advancedPayement = parseFloat(document.querySelector('#advancedPayement').value);
-	let persentage  = parseFloat(document.querySelector('#persentage').value); 
-	let NumberOfMonths  =parseFloat( document.querySelector('#NumberOfMonths').value); 
-	let numberOfyears = parseFloat(NumberOfMonths/12.0);
-	let totalProfit = (productValue - advancedPayement) * (persentage/100.0) * numberOfyears ;
-	document.querySelector('#numberOfyears').innerText = numberOfyears.toFixed(2);
-	document.querySelector('#totalProfit').innerText = totalProfit.toFixed(2);
-	document.querySelector('#totalWidthProfit').innerText = (productValue + totalProfit).toFixed(2);
-	document.querySelector('#satalemtValue').innerText = ((productValue + totalProfit - advancedPayement)/NumberOfMonths).toFixed(2);
-	document.querySelector('#profitPersentage').innerText =(((totalProfit )/(productValue)) * 100.0).toFixed(2);
-
-	}
-	function AttacheEvents(){
-		const elemets = document.querySelectorAll('.form-control');
-		elemets.forEach(el => el.addEventListener('click', event => {
-		  CalCulateStaelemts()
-		}));
-		elemets.forEach(el => el.addEventListener('keydown', event => {
-		  CalCulateStaelemts()
-		}));
-		elemets.forEach(el => el.addEventListener('keyup', event => {
-		  CalCulateStaelemts()
-		}));
-	}
-	
-	
-	window.addEventListener('load', function () {
-		AttacheEvents();
-	})
-	</script>
-	
-	<script src="data.js"></script>
-
-<script>
-
-console.log(data[0]['جدول البيانات']);
-
-var newArray = data[0]['جدول البيانات'].filter(function (el) {
-  return el.الأهمية.trim().match('حالًا');
-});
-
-console.log(newArray);
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js" ></script>
-
-
-<script>
-const ctx = document.getElementById('myChart').getContext('2d');
-const myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
-</script>
+  <script src="global-functions.js"></script>
 </body>
+
 </html>
-
-
