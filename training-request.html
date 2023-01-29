@@ -70,7 +70,7 @@
 
       <div class="col-md-8">
         <div class="col-md-12">
-          <h3>استمارة ترشيح متدرب</h3>
+          <h3>طلب تدريب</h3>
           <small id="emailHelp" class="form-text text-muted">
             طلب تدريب يقدمة الموظف ويعرض على مدير الشئون الأكادمية للموافقة ثم يرسل الطلب للحصول على موفقة مدير عام
             اللإدارة
@@ -123,7 +123,7 @@
 
           <div class="d-flex justify-content-between mt-2">
             <div class="col me-2">
-              <label>رقم التصنيف المهني(للكادر الصحي)</label><br>
+              <label>رقم التصنيف المهني (للكادر الصحي)</label><br>
               <input type="text" class="form-control">
             </div>
             <div class="col me-2">
@@ -363,46 +363,62 @@
           <div class="d-flex mt-3">
             <label>هل يوجد ارتباط مالي للتكلفة من الإدارة العامة للميزانية؟</label>
             <div class="d-flex justify-content-center ms-5">
-              <input type="radio" name="finance-relation" value="yes" checked>
+              <input type="radio" name="finance-relation" value="yes"
+                onchange="displayChange('finance-attachment', this.checked)">
               <label for="yes" class="ms-1">نعم </label>
-              <input type="radio" name="finance-relation" value="no" class="ms-3">
+              <input type="radio" name="finance-relation" class="ms-3" value="no" checked
+                onchange="displayChange('finance-attachment', false)">
               <label for="no" class="ms-1">لا</label>
-              <label class="ms-2">(ارفاق ما يٌثبت إذا الإجابة نعم)</label>
+              <div id="finance-attachment" class="ms-3 d-none">
+                <label class="ms-2">(ارفاق ما يٌثبت)</label>
+                <input type="file">
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex mt-4">
+            <label class="fw-bold">تنفيذ النشاط:</label>
+            <div class="d-flex justify-content-center ms-5">
+              <input type="radio" name="place" value="yes" onchange="onEventPlaceChange('internal')" checked>
+              <label for="yes" class="ms-1">داخلي </label>
+              <input type="radio" name="place" value="no" onchange="onEventPlaceChange('external')" class="ms-3">
+              <label for="no" class="ms-1">خارجي</label>
             </div>
           </div>
 
           <div class="d-flex justify-content-between mt-3">
             <div class="col me-2">
-              <label>الجهة المنفذة</label>
-              <input type="text" class="form-control">
+              <label>الدولة</label>
+              <select class="form-select countries" id="event-country" disabled></select>
             </div>
             <div class="col me-2">
-              <label>مكان الانعقاد</label>
-              <div class="d-flex justify-content-center ms-5">
-                <input type="radio" name="place" value="yes" checked>
-                <label for="yes" class="ms-1">داخلي </label>
-                <input type="radio" name="place" value="no" class="ms-3">
-                <label for="no" class="ms-1">خارجي</label>
-              </div>
+              <label>المدينة</label>
+              <select class="form-select cities"></select>
             </div>
-            <div class="col">
-              <label>المدينة/البلد (فى حال مكان النشاط خارجي)</label>
+            <div class="col me-2">
+              <label>الجهة المنفذة</label>
               <input type="text" class="form-control">
             </div>
           </div>
 
           <div class="d-flex mt-3">
-            <label>نوع المشاركة بالنشاط</label>
+            <label>نوع المشاركة</label>
             <div class="d-flex justify-content-center ms-5">
-              <input type="radio" name="part-type" value="yes" checked>
+              <input type="radio" name="part-type" value="no" checked>
+              <label for="no" class="ms-1">حضور فقط</label>
+              <input type="radio" name="part-type" value="yes" class="ms-3">
               <label for="yes" class="ms-1">ورقة علمية</label>
-              <input type="radio" name="part-type" value="no" class="ms-3">
-              <label for="no" class="ms-1">الحضور فقط</label>
+              <input type="radio" name="part-type" value="yes" class="ms-3">
+              <label for="yes" class="ms-1">متحدث</label>
+              <input type="radio" name="part-type" value="yes" class="ms-3">
+              <label for="yes" class="ms-1">مُقيم</label>
+              <input type="radio" name="part-type" value="yes" class="ms-3">
+              <label for="yes" class="ms-1">منسق</label>
             </div>
           </div>
 
           <div class="d-flex flex-column mt-3">
-            <label>آخر مؤتمر/تدريب خاجي تم حضورة</label>
+            <label>آخر مؤتمر/تدريب خارجي تم حضورة</label>
             <div class="d-flex ms-5 mt-1">
               <div class="col d-flex">
                 <span class="text-nowrap">عنوان النشاط: </span>&nbsp;
@@ -430,6 +446,7 @@
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"></script>
     <script src="menu.js"></script>
+    <script src="global-functions.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
@@ -441,7 +458,14 @@
       $('.datepicker').datepicker({
         format: 'mm/dd/yyyy',
         startDate: '-3d'
-      });  
+      });
+      function onEventPlaceChange(place) {
+        let internal = place === "internal";
+        if (internal) {
+          $("#event-country :first-child").prop('selected', true);
+        }
+        $("#event-country").prop("disabled", internal);
+      }
     </script>
 </body>
 
