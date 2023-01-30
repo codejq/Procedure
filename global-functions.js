@@ -10,7 +10,7 @@ function displayChange(elId, show = true) {
 
 
 function initNumbersElements() {
-    let els = [...document.getElementsByClassName("prevent-wrtie")];
+    let els = [...document.getElementsByClassName("input-number")];
     els.forEach(element => {
         element.onkeydown = function (event) {
             if (event.keyCode === 38 || event.keyCode == 40)
