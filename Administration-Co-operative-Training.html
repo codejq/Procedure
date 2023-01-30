@@ -104,9 +104,10 @@
                             <td>25/10/2023</td>
                             <td>تحت الاجراء </td>
                             <td><button type="button" class="btn btn-success">التفاصيل</button></td>
-                            <td><button type="button" class="btn btn-primary">موافقة</button></td>
-                            <td><button type="button" class="btn btn-danger" data-toggle="modal"
-                                    data-target="#refuseReason" onclick="showModal()">رفض</button></td>
+                            <td><button type="button" class="btn btn-primary"
+                                    onclick="showModal('trainer-form')">موافقة</button></td>
+                            <td><button type="button" class="btn btn-danger"
+                                    onclick="showModal('refuseReason')">رفض</button></td>
                         </tr>
                         <tr>
                             <td>2</td>
@@ -116,8 +117,10 @@
                             <td>25/10/2023</td>
                             <td>تحت الاجراء </td>
                             <td><button type="button" class="btn btn-success">التفاصيل</button></td>
-                            <td><button type="button" class="btn btn-primary">موافقة</button></td>
-                            <td><button type="button" class="btn btn-danger">رفض</button></td>
+                            <td><button type="button" class="btn btn-primary"
+                                    onclick="showModal('trainer-form')">موافقة</button></td>
+                            <td><button type="button" class="btn btn-danger"
+                                    onclick="showModal('refuseReason')">رفض</button></td>
                         </tr>
                         <tr>
                             <td>3</td>
@@ -127,8 +130,10 @@
                             <td>25/10/2023</td>
                             <td>تحت الاجراء </td>
                             <td><button type="button" class="btn btn-success">التفاصيل</button></td>
-                            <td><button type="button" class="btn btn-primary">موافقة</button></td>
-                            <td><button type="button" class="btn btn-danger">رفض</button></td>
+                            <td><button type="button" class="btn btn-primary"
+                                    onclick="showModal('trainer-form')">موافقة</button></td>
+                            <td><button type="button" class="btn btn-danger"
+                                    onclick="showModal('refuseReason')">رفض</button></td>
                         </tr>
                         <tr>
                             <td>4</td>
@@ -138,8 +143,10 @@
                             <td>25/10/2023</td>
                             <td>تحت الاجراء </td>
                             <td><button type="button" class="btn btn-success">التفاصيل</button></td>
-                            <td><button type="button" class="btn btn-primary">موافقة</button></td>
-                            <td><button type="button" class="btn btn-danger">رفض</button></td>
+                            <td><button type="button" class="btn btn-primary"
+                                    onclick="showModal('trainer-form')">موافقة</button></td>
+                            <td><button type="button" class="btn btn-danger"
+                                    onclick="showModal('refuseReason')">رفض</button></td>
                         </tr>
                         <tr>
                             <td>5</td>
@@ -149,8 +156,10 @@
                             <td>25/10/2023</td>
                             <td>تحت الاجراء </td>
                             <td><button type="button" class="btn btn-success">التفاصيل</button></td>
-                            <td><button type="button" class="btn btn-primary">موافقة</button></td>
-                            <td><button type="button" class="btn btn-danger">رفض</button></td>
+                            <td><button type="button" class="btn btn-primary"
+                                    onclick="showModal('trainer-form')">موافقة</button></td>
+                            <td><button type="button" class="btn btn-danger"
+                                    onclick="showModal('refuseReason')">رفض</button></td>
                         </tr>
                         <tr>
                             <td>6</td>
@@ -242,12 +251,40 @@
         </div>
     </div>
 
+    <div class="modal fade" id="trainer-form" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">تحديد القسم والمدرب</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                        onclick="hideModal(this)">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <label class="mt-2">القسم</label>
+                    <select class="form-select"></select>
+
+                    <label class="mt-2">المدرب</label>
+                    <select class="form-select"></select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                        onclick="hideModal(this)">إلغاء</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"
+                        onclick="hideModal(this)">حفظ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="refuseReason" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">سبب الرفض</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="hideModal()">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                        onclick="hideModal(this)">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -255,8 +292,10 @@
                     <textarea class="form-control" rows="4"></textarea>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="hideModal()">إغلاق</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="hideModal()">تأكيد الرفض</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                        onclick="hideModal(this)">إغلاق</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="hideModal(this)">تأكيد
+                        الرفض</button>
                 </div>
             </div>
         </div>
@@ -271,11 +310,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
     <script>
-        function showModal() {
-            $('#refuseReason').modal('show');
+        function showModal(id) {
+            $(`#${id}`).modal('show');
         }
-        function hideModal() {
-            $('#refuseReason').modal('hide');
+        function hideModal(e) {
+            $(e).closest(".modal").modal('hide');
         }
     </script>
 </body>

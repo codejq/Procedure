@@ -39,6 +39,25 @@ function initCountriesOptions() {
     });
 }
 
+function initTextList() {
+    let row = (index) => `              
+    <div class="d-flex align-items-center mt-2">
+        <label>${index}- </label>&nbsp;
+        <input type="text" class="form-control flex-grow-1">
+    </div>`;
+
+    let body = "";
+    for (i = 1; i <= 5; i++) {
+        body += row(i);
+    }
+    
+    let lists = [...document.getElementsByClassName("text-list")];
+    lists.forEach(element => {
+        element.innerHTML = body;
+    });
+}
+
 
 initNumbersElements();
 initCountriesOptions();
+initTextList();
