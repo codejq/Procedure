@@ -23,6 +23,8 @@ const menu = [
     { href: "HealthPractitioner-addExist-coordinator.html", text: "إضافة الممارسين الصحيين (منسق المركز)" },
     { href: "HealthPractitioner-training-center-coordinator.html", text: "الممارسين الصحيين (منسق المركز)" },
     { href: "HealthPractitioner-admin.html", text: "الممارسين الصحيين (المدير)" },
+    { href: "Conference-create.html", text: "اعلان عن مؤتمر" },
+    { href: "Conference-Approve.html", text: "اعتماد المؤتمرات" },
 ]
 
 menu.forEach(item => {
