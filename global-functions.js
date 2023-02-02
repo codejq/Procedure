@@ -13,8 +13,11 @@ function initNumbersElements() {
     let els = [...document.getElementsByClassName("input-number")];
     els.forEach(element => {
         element.onkeydown = function (event) {
-            if (event.keyCode === 38 || event.keyCode == 40)
+            let allowedChar = [8,46,...Array.from({length: 4}, (_, i) => i + 37),...Array.from({length: 10}, (_, i) => i + 96)]
+            if (allowedChar.indexOf(event.keyCode) > -1)
                 return;
+            event.preventDefault();
+            event.stopPropagation();
         }
     });
 }
@@ -50,7 +53,7 @@ function initTextList() {
     for (i = 1; i <= 5; i++) {
         body += row(i);
     }
-    
+
     let lists = [...document.getElementsByClassName("text-list")];
     lists.forEach(element => {
         element.innerHTML = body;
