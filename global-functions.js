@@ -8,12 +8,16 @@ function displayChange(elId, show = true) {
     }
 }
 
+function readOnlyChange(elId, readOnly = true) {
+    document.getElementById(elId).disabled = readOnly;
+}
+
 
 function initNumbersElements() {
     let els = [...document.getElementsByClassName("input-number")];
     els.forEach(element => {
         element.onkeydown = function (event) {
-            let allowedChar = [8,46,...Array.from({length: 4}, (_, i) => i + 37),...Array.from({length: 10}, (_, i) => i + 96)]
+            let allowedChar = [8, 46, ...Array.from({ length: 4 }, (_, i) => i + 37), ...Array.from({ length: 10 }, (_, i) => i + 96)]
             if (allowedChar.indexOf(event.keyCode) > -1)
                 return;
             event.preventDefault();
