@@ -24,6 +24,7 @@ const menu = [
     { href: "HealthPractitioner-training-center-coordinator.html", text: "الممارسين الصحيين (منسق المركز)" },
     { href: "HealthPractitioner-admin.html", text: "الممارسين الصحيين (المدير)" },
     { href: "Conference-PreliminaryApproval-Request.html", text: "طلب موافقة مبدئية لإقامة مؤتمر" },
+    { href: "Conference-PreliminaryApproval-List.html", text: "متابعة طلبات الموافقة المبدئية" },
     { href: "Conference-Details.html", text: "استكمال بيانات المؤتمر" },
     { href: "Conference-create.html", text: "اعلان عن مؤتمر" },
     { href: "Conference-Approve.html", text: "اعتماد المؤتمرات" },
