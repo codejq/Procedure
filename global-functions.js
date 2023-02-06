@@ -63,8 +63,17 @@ function initTextList() {
         element.innerHTML = body;
     });
 }
+function initRequired() {
+    let els = [...document.querySelectorAll("[required]")];
+    els.forEach(e => {
+        // e.setAttribute("style", "border-color: #efbdbd;")
+        let label = e.previousElementSibling;
+        label.innerHTML = label.innerHTML + '<span style="color: red;">*</span>';
+    })
+}
 
 
 initNumbersElements();
 initCountriesOptions();
 initTextList();
+initRequired();

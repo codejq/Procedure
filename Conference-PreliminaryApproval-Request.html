@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" style="direction: rtl;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-LPvXVVAlyPoBSGkX8UddpctDks+1P4HG8MhT7/YwqHtJ40bstjzCqjj+VVVDhsCo" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .form-control {
+      direction: rtl;
+      font-size: 20px;
+    }
+
+    .data-out {
+      color: #146fb0;
+      font-size: 20px;
+      font-weight: 900;
+      padding: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluied">
+
+    <div class="row mt-5">
+
+      <div class="col-md-3">
+        <ul id="menu"></ul>
+      </div>
+
+      <div class="col-md-8">
+        <div class="col-md-12">
+          <h3>طلب موافقة مبدئية للاعلان عن مؤتمر</h3>
+          <small id="emailHelp" class="form-text text-muted">
+            تشمل البيانات الرئيسية للمؤتمر <br>
+            يتم ارسال طلب قبل المؤتمر ب 6 اشهر للحصول على الموافقة
+          </small>
+          <p>&nbsp;</p>
+
+        </div>
+
+        <form>
+          <div class="row">
+            <div class="col-md-6">
+              <label>عنوان المؤتمر </label>
+              <input type="text" class="form-control" required>
+            </div>
+
+            <div class="col-md-6">
+              <label>عنوان المؤتمر باللغة الإنجليزية </label>
+              <input type="text" class="form-control" required>
+            </div>
+          </div>
+
+          <div class="form-group mt-2">
+            <label>نبذة عن المؤتمر </label>
+            <textarea rows="3" class="form-control"></textarea>
+          </div>
+
+          <div class="d-flex mt-2">
+            <label>لغة المؤتمر</label>
+            <div class="ms-5" required>
+              <input type="radio" name="language" value="arabic" checked>
+              <label for="mail">عربي</label>
+              <input type="radio" name="language" value="english">
+              <label for="femail">انجليزي</label>
+            </div>
+          </div>
+
+
+          <div class="row mt-2" style="min-height: 68px;">
+            <div class="d-flex align-items-center col-md-6">
+              <label>هل يوجد تعاون مع متحدثين دوليين؟</label>
+              <div class="ms-5" required>
+                <label class="me-2"><input class="me-2" type="radio" name="language" value="yes"
+                    onchange="displayChange('speakersNo', true)" checked>نعم</label>
+                <label><input class="me-2" type="radio" name="language" value="no"
+                    onchange="displayChange('speakersNo', false)">لا</label>
+              </div>
+            </div>
+            <div class="form-group col-md-6" id="speakersNo">
+              <label>عدد المتحدثون الدوليون المتوقع</label>
+              <input type="number" class="form-control" required>
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <div class="form-group col-md-6">
+              <label>المجال المهني</label>
+              <select type="text" class="form-control" required>
+                <option>طب الأسنان والتخصصات المساندة</option>
+                <option>فنيون ومساعدون صحيون</option>
+                <option>المختبرات والتقنيات الطبية</option>
+                <option>طب بشري</option>
+                <option>تمريض وقبالة</option>
+                <option>صيدلة وفنيو الصيدلة</option>
+                <option>العلاج والأهيل</option>
+                <option>الإدارة الصحية وصحة المجتمع</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label>التخصص</label>
+              <select type="text" class="form-control" required>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+            </div>
+            <div class="form-group col-md-6 mt-2">
+              <label>التخصص الدقيق</label>
+              <select type="text" class="form-control">
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <div class="form-group col-md-6">
+              <label>الدولة</label>
+              <select type="text" class="form-control countries" required></select>
+            </div>
+            <div class="form-group col-md-6">
+              <label>المدينة</label>
+              <select type="text" class="form-control cities" required></select>
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <div class="form-group col-md-6">
+              <label>جهة التفيذ</label>
+              <input type="text" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-6">
+              <label>مقر التفيذ</label>
+              <input type="text" class="form-control" required>
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <div class="form-group col-md-6">
+              <label>تاريخ بداية المؤتمر </label>
+              <input type="date" class="form-control" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label>تاريخ انتهاء المؤتمر </label>
+              <input type="date" class="form-control" required>
+            </div>
+          </div>
+
+          <br><br>
+          <button type="submit" class="btn btn-primary">ارسال طلب الموافقة</button>
+          <button type="submit" class="btn btn-danger">الغاء</button>
+        </form>
+
+        <br><br><br><br>
+      </div>
+
+    </div>
+
+
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+  <script src="menu.js"></script>
+
+  <script src="global-functions.js"></script>
+</body>
+
+</html>
