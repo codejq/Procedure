@@ -84,7 +84,7 @@
         </div>
 
         <div>
-          <button type="submit" class="btn btn-primary mb-2">إضافة معيار</button>
+          <button type="submit" class="btn btn-primary mb-2" onclick="showModal('criteria-form')">إضافة معيار</button>
 
           <table class="table table-striped table-hover table-bordered">
             <thead>
@@ -100,37 +100,43 @@
                 <td>1</td>
                 <td>Study is innovative and has potential to contribute to the field</td>
                 <td>Presentation Overall</td>
-                <td><button type="button" class="btn btn-outline-primary">تعديل</button></td>
+                <td><button type="button" class="btn btn-outline-primary"
+                    onclick="showModal('criteria-form')">تعديل</button></td>
               </tr>
               <tr>
                 <td>2</td>
                 <td>Length of poster summary (by presenter) was appropriate</td>
                 <td>Presentation Overall</td>
-                <td><button type="button" class="btn btn-outline-primary">تعديل</button></td>
+                <td><button type="button" class="btn btn-outline-primary"
+                    onclick="showModal('criteria-form')">تعديل</button></td>
               </tr>
               <tr>
                 <td>3</td>
                 <td>Presenter answered questions well</td>
                 <td>Presentation Overall</td>
-                <td><button type="button" class="btn btn-outline-primary">تعديل</button></td>
+                <td><button type="button" class="btn btn-outline-primary"
+                    onclick="showModal('criteria-form')">تعديل</button></td>
               </tr>
               <tr>
                 <td>4</td>
                 <td>Flow of information is logical and facilitates understanding</td>
                 <td>Presentation Overall</td>
-                <td><button type="button" class="btn btn-outline-primary">تعديل</button></td>
+                <td><button type="button" class="btn btn-outline-primary"
+                    onclick="showModal('criteria-form')">تعديل</button></td>
               </tr>
               <tr>
                 <td>5</td>
                 <td>Effective overall aesthetic/organization of poster</td>
                 <td>Presentation Overall</td>
-                <td><button type="button" class="btn btn-outline-primary">تعديل</button></td>
+                <td><button type="button" class="btn btn-outline-primary"
+                    onclick="showModal('criteria-form')">تعديل</button></td>
               </tr>
               <tr>
                 <td>6</td>
                 <td>Conclusion/Discussion</td>
                 <td>Importance of findings is addressed</td>
-                <td><button type="button" class="btn btn-outline-primary">تعديل</button></td>
+                <td><button type="button" class="btn btn-outline-primary"
+                    onclick="showModal('criteria-form')">تعديل</button></td>
               </tr>
             </tbody>
           </table>
@@ -140,10 +146,43 @@
       </div>
 
     </div>
-
-
-
   </div>
+
+  <div class="modal fade" id="criteria-form" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">إضافة/ تعديل معيار</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="hideModal(this)">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <label class="mt-2">التصنيف</label>
+          <select class="form-select">
+            <option>Presentation Overall</option>
+            <option>Conclusion/Discussion	</option>
+            <option>Analysis/Results</option>
+            <option>Presentation</option>
+            <option>Content</option>
+            <option>Organization</option>
+          </select>
+
+          <label class="mt-2">العنوان</label>
+          <input type="text" class="form-control">
+
+          <label class="mt-2">الوصف</label>
+          <textarea rows="2" class="form-control"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="hideModal(this)">إلغاء</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="hideModal(this)">حفظ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
@@ -151,6 +190,16 @@
   <script src="menu.js"></script>
 
   <script src="global-functions.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <script>
+    function showModal(id) {
+      $(`#${id}`).modal('show');
+    }
+    function hideModal(e) {
+      $(e).closest(".modal").modal('hide');
+    }
+  </script>
 </body>
 
 </html>
