@@ -28,6 +28,9 @@ const menu = [
     { href: "Conference-Details.html", text: "استكمال بيانات المؤتمر" },
     { href: "Conference-create.html", text: "اعلان عن مؤتمر" },
     { href: "Conference-Approve.html", text: "اعتماد المؤتمرات" },
+    { href: "Conference-ScientificPaper-Criteria-Category.html", text: "تصنيف معايير تقديم الأوراق العلمية المؤتمرات" },
+    { href: "Conference-ScientificPaper-Criteria.html", text: "معايير  تقديم الأوراق العلمية المؤتمرات" },
+
 ]
 
 menu.forEach(item => {
