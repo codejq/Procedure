@@ -26,11 +26,12 @@ const menu = [
     { href: "Conference-PreliminaryApproval-Request.html", text: "طلب موافقة مبدئية لإقامة مؤتمر" },
     { href: "Conference-PreliminaryApproval-List.html", text: "متابعة طلبات الموافقة المبدئية" },
     { href: "Conference-Details.html", text: "استكمال بيانات المؤتمر" },
-    { href: "Conference-create.html", text: "اعلان عن مؤتمر" },
+    { href: "Conference-Ads.html", text: "اعلان عن مؤتمر" },
     { href: "Conference-Approve.html", text: "اعتماد المؤتمرات" },
     { href: "Conference-ScientificPaper-Criteria-Category.html", text: "تصنيف معايير تقديم الأوراق العلمية المؤتمرات" },
     { href: "Conference-ScientificPaper-Criteria.html", text: "معايير  تقديم الأوراق العلمية المؤتمرات" },
-
+    { href: "Conference-ScientificPaper.html", text: "تقديم ورقة علمية" },
+    { href: "Conference-ScientificPaper-Evaluation.html", text: "تقييم الاوراق العلمية" },
 ]
 
 menu.forEach(item => {
