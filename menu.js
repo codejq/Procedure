@@ -10,7 +10,7 @@ const menu = [
     { href: "userlist.html", text: " ادارة التسجيل" },
     { href: "adv.html", text: " الاعلان " },
     { href: "register.html", text: " التسجيل في دورة " },
-    { href: "training-request.html", text: " طلب تدريب" },
+    { href: "training-request.html", text: "طلب تدريب (منسوب للوزارة)" },
     { href: "My-TrainingRequests.html", text: "قائمة طلبات التدريب (متدرب)" },
     { href: "Coordinator-TrainingRequests.html", text: "ادارة طلبات التدريب (منسق/ مدير المركز  ثم المدير العام)" },
     { href: "CreditHours-Request.html", text: "طلب اعتماد ساعات تعليمية لبرنامج تدريبي " },
